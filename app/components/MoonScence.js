@@ -12,7 +12,7 @@ const MoonScene = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
 
     // Create a starry background using a sphere with a starry texture
-    const starTexture = new THREE.TextureLoader().load('/path-to-star-texture.jpg');
+    const starTexture = new THREE.TextureLoader().load('/public/look_how_they_shine_for_you.jpg');
     const starSphereGeometry = new THREE.SphereGeometry(200, 32, 32);
     const starSphereMaterial = new THREE.MeshBasicMaterial({ map: starTexture, side: THREE.BackSide });
     const starSphere = new THREE.Mesh(starSphereGeometry, starSphereMaterial);
